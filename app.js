@@ -10,10 +10,10 @@ const bodyParserMW = bodyParser.urlencoded({
     extended: true
 })
 app.get("/", (req, res, next)=>{
-  res.sendFile(path.join(__dirname,"..","assignment-express","home.html"))
+  res.sendFile(path.join(__dirname,"..","express","home.html"))
 })
 app.get("/form", (req, res , next)=>{
-  res.sendFile(path.join(__dirname,"..","assignment-express","index.html"))
+  res.sendFile(path.join(__dirname,"..","express","index.html"))
 })
 app.post("/SignUP", bodyParserMW, (req, res, next)=>{
     console.log(req.body)
