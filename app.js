@@ -17,7 +17,7 @@ app.get("/form", (req, res , next)=>{
 })
 app.post("/SignUP", bodyParserMW, (req, res, next)=>{
     console.log(req.body)
-    fs.writeFileSync("message.txt" ,JSON.stringify(req.body));
+    fs.writeFileSync("programming.txt" ,JSON.stringify(req.body));
     res.end();
 })
 app.listen(3001, ()=>{
